@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación de Cita Médica</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            font-size: 14px;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            height: 70px;
+        }
+
+        .header div {
+            text-align: right;
+            font-size: 12px;
+            color: #555;
+        }
+
+        .title {
+            text-align: center;
+            margin: 20px 0;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 18px;
+            color: #007bff;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #f0f8ff;
+            font-weight: bold;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            margin-top: 20px;
+            color: #555;
+        }
+
+        .footer p {
+            margin: 5px 0;
+        }
+
+        .note {
+            font-size: 12px;
+            font-style: italic;
+            text-align: center;
+            margin-top: 20px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="Imagenes/logo.png" alt="Logo">
+            <div>
+                <p><strong>HOSPITAL UNIVERSITARIO SAN JOSÉ</strong></p>
+                <p>Dirección: Calle 45 #123-45, Bogotá, Colombia</p>
+                <p>Teléfono: (601) 555-6789</p>
+            </div>
+        </div>
+
+        <div class="title">
+            <p>Autorización cita</p>
+        </div>
+
+        <table>
+            <tr>
+                <th>Paciente</th>
+                <td>@paciente</td>
+            </tr>
+            <tr>
+                <th>Documento</th>
+                <td>@documento</td>
+            </tr>
+            <tr>
+                <th>ID de la Cita</th>
+                <td>@id_cita</td>
+            </tr>
+            <tr>
+                <th>Profesional</th>
+                <td>@profesional</td>
+            </tr>
+            <tr>
+                <th>Especialidad</th>
+                <td>@especialidad</td>
+            </tr>
+            <tr>
+                <th>Día</th>
+                <td>@dia</td>
+            </tr>
+            <tr>
+                <th>Hora de Inicio</th>
+                <td>@hora_inicio</td>
+            </tr>
+            <tr>
+                <th>Hora de Fin</th>
+                <td>@hora_fin</td>
+            </tr>
+        </table>
+
+        <div class="footer">
+            <p>Presentarse 40 minutos antes de la cita.</p>
+            <p>Para cambios o cancelaciones, use el asistente inteligente.</p>
+        </div>
+
+        <div class="note">
+            <p>Este documento es una confirmación oficial de su cita médica. Si tiene alguna duda, por favor contáctenos.</p>
+        </div>
+    </div>
+</body>
+</html>
